@@ -1,0 +1,98 @@
+html{
+    background-color: rgb(24,48,48);
+    color: red;
+}
+#x,#link{
+    height: 30px;
+    width: 50%;
+    color: turquoise;
+    background-color: black;
+    border: 1px solid rgb(0,255,0);
+    vertical-align: middle;
+    font-size: larger;
+    padding: 1%;
+}
+#x::placeholder,#link::placeholder{
+    color: red;
+}
+#x:focus,#link:focus{
+    border: 3px solid rgb(0,255,0);
+}
+.history-table{
+    width: 100%;
+    border: 1px solid aqua;
+    background-color: black;
+    color: white;
+}
+td,th{
+    border: 1px solid aqua;
+    text-align: center;
+}
+td{
+    color: yellow;
+    width: 25%;
+}
+td a{
+    border: 1px solid red;
+    border-radius: 5px;
+    font-weight: 900;
+    color: darkblue;
+    background-color: lime;
+    text-decoration: none;
+    font-size: larger;
+}
+img{
+    width: 28px;
+    height: 25px;
+    border: 3px solid gold;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+#link-btn{
+    vertical-align: middle;
+    background-color: brown;
+    color: white;
+    border: 1px solid white;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#search-btn{
+    vertical-align: middle;
+    background-color: brown;
+    color: white;
+    border: 1px solid white;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#clr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    background-color: brown;
+    color: white;
+    border: 1px solid white;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 385px) {
+    #x{
+        width: auto;
+    }
+    #link{
+        width: auto;
+    }
+    #search-btn{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 5px;
+    }
+}

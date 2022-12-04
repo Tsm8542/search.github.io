@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eazy-Surfer</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<body onload="ld()">
+    <div class="search">
+        <input type="text" id="x" autocomplete="on" placeholder="Search term...">
+        <img src="img/g.jpg" onclick="a()">
+        <img src="img/yt.jpg" onclick="b()">
+        <img src="img/wiki.png" onclick="c()">
+        <button id="search-btn" onclick="d()" id>Search all</button>
+    </div>
+    <br>
+    <div class="link-opener">
+        <input type="text" id="link" autocomplete="on" placeholder="Enter the link to be visisted...">
+        <button onclick="x()" id="link-btn">Go to the link</button>
+    </div>
+    <br>
+    <button id="clr" onclick="cl()">Clear history</button>
+    <div class="history">
+        <table class="history-table">
+            <tr><th>Date</th><th>Time</th><th>Search History</th><th>Click to open link</th></tr>
+        </table>
+    </div>
+</body>
+</html>
