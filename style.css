@@ -84,10 +84,10 @@ img{
 }
 @media only screen and (max-width: 385px) {
     #x{
-        width: auto;
+        width: 50%;
     }
     #link{
-        width: auto;
+        width: 50%;
     }
     #search-btn{
         margin-left: auto;
