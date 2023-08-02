@@ -9,7 +9,7 @@
 <script src="script.js"></script>
 <body onload="ld()">
     <div class="search">
-        <input type="text" id="x" autocomplete="on" placeholder="Search term...">
+        <input onfocus="clr('#x')" type="text" id="x" autocomplete="on" placeholder="Search term...">
         <button id="gsrc-btn" onclick="a()"><img src="img/g.jpg"></button>
         <button id="ysrc-btn" onclick="b()"><img src="img/yt.jpg"></button>
         <button id="wsrc-btn" onclick="c()"><img src="img/wiki.png"></button>
@@ -17,14 +17,14 @@
     </div>
     <br>
     <div class="link-opener">
-        <input type="text" id="link" autocomplete="on" placeholder="Enter the link to be visisted...">
+        <input onfocus="clr('#link')" type="text" id="link" autocomplete="on" placeholder="Enter the link to be visisted...">
         <button onclick="x()" id="link-btn">Go to the link</button>
     </div>
     <br>
     <button id="clr" onclick="cl()">Clear history</button>
     <div class="history">
         <table class="history-table">
-            <tr><th>Date</th><th>Time</th><th>Search History</th><th>Click to open link</th></tr>
+            <tr><th style="width: 10%;">Date</th><th style="width: 10%;">Time</th><th style="width: 50%;">Search History</th><th style="width: 20%;">Click to open link</th><th style="width: 10%;">Click to enter in searchbox</th></tr>
         </table>
     </div>
 </body>

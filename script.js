@@ -33,7 +33,7 @@ function x(){
     a.target="_blank";
     if(term!=(""&&"https://")){
         a.click();
-        document.querySelector(".history-table").innerHTML+="<tr><td>"+date()+"</td><td>"+time()+"</td><td>"+"Visited a link"+'</td><td><a href="'+a.href+'" target="_blank">&#128073;&#127995;</a></td></tr>';
+        document.querySelector(".history-table").innerHTML+="<tr><td>"+date()+"</td><td>"+time()+"</td><td>"+"Visited a link"+'</td><td><a href="'+a.href+'" target="_blank">&#128073;&#127995;</a></td><td><button onclick="lent(\''+term+'\')" style="font-weight:bolder;margin:0;padding:0;" onclick="">&#8689;</button></td></tr>';
         localStorage.tt = document.querySelector(".history-table").innerHTML;
     }
 }
@@ -44,7 +44,7 @@ function a(){
     a.target="_blank";
     if(term!=""){
         a.click();
-        document.querySelector(".history-table").innerHTML+="<tr><td>"+date()+"</td><td>"+time()+"</td><td>"+term+'</td><td><a href="'+a.href+'" target="_blank">&#128073;&#127995;</a></td></tr>';
+        document.querySelector(".history-table").innerHTML+="<tr><td>"+date()+"</td><td>"+time()+"</td><td>"+term+'</td><td><a href="'+a.href+'" target="_blank">&#128073;&#127995;</a></td><td><button onclick="ent(\''+term+'\')" style="font-weight:bolder;margin:0;padding:0;" onclick="">&#8689;</button></td></tr>';
         localStorage.tt = document.querySelector(".history-table").innerHTML;
     }
 }
@@ -55,7 +55,7 @@ function b(){
     a.target="_blank";
     if(term!=""){
         a.click();
-        document.querySelector(".history-table").innerHTML+="<tr><td>"+date()+"</td><td>"+time()+"</td><td>"+term+'</td><td><a href="'+a.href+'" target="_blank">&#128073;&#127995;</a></td></tr>';
+        document.querySelector(".history-table").innerHTML+="<tr><td>"+date()+"</td><td>"+time()+"</td><td>"+term+'</td><td><a href="'+a.href+'" target="_blank">&#128073;&#127995;</a><td><button onclick="ent("'+term+'")" style="font-weight:bolder;margin:0;padding:0;" onclick="">&#8689;</button></td></td></tr>';
         localStorage.tt = document.querySelector(".history-table").innerHTML;
     }
 }
@@ -66,7 +66,7 @@ function c(){
     a.target="_blank";
     if(term!=""){
         a.click();
-        document.querySelector(".history-table").innerHTML+="<tr><td>"+date()+"</td><td>"+time()+"</td><td>"+term+'</td><td><a href="'+a.href+'" target="_blank">&#128073;&#127995;</a></td></tr>';
+        document.querySelector(".history-table").innerHTML+="<tr><td>"+date()+"</td><td>"+time()+"</td><td>"+term+'</td><td><a href="'+a.href+'" target="_blank">&#128073;&#127995;</a></td><td><button onclick="ent("'+term+'")" style="font-weight:bolder;margin:0;padding:0;" onclick="">&#8689;</button></td></tr>';
         localStorage.tt = document.querySelector(".history-table").innerHTML;
     }
 }
@@ -95,4 +95,18 @@ function cl(){
         document.querySelector(".history-table").innerHTML="<tr><th>Date</th><th>Time</th><th>Search History</th><th>Click to open link</th></tr>";
         localStorage.tt = document.querySelector(".history-table").innerHTML;
     }
+}
+
+function clr(x){
+    document.querySelector(x).value="";
+}
+
+function ent(x){
+    document.querySelector("#x").focus();
+    document.querySelector("#x").value=x;
+}
+
+function lent(x){
+    document.querySelector("#link").focus();
+    document.querySelector("#link").value=x;
 }

@@ -30,7 +30,7 @@ td,th{
 }
 td{
     color: yellow;
-    width: 25%;
+    word-break: break-all;
 }
 td a{
     border: 1px solid red;
