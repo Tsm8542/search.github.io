@@ -96,3 +96,11 @@ img{
         margin-top: 5px;
     }
 }
+
+#gsrc-btn,#ysrc-btn,#wsrc-btn{
+    appearance: none;
+    background-color: inherit;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
